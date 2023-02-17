@@ -48,7 +48,7 @@ contract polkarbon is ERC20Burnable, Ownable {
             //native mint with GLMR token: 1 pKarb equals 1 GLMR
             require(msg.value >= _amount, "Not enough GLMR");
 
-            // _stake(_collatorId, _amount); to uncomment
+             _stake(_collatorId, _amount); 
 
             _mint(msg.sender, _amount); 
             emit pKarbMinted(msg.sender, _amount);
@@ -73,7 +73,7 @@ contract polkarbon is ERC20Burnable, Ownable {
                 block.timestamp
             );
 
-            //_stake(_collatorId, amounts[amounts.length - 1]); to uncomment
+            _stake(_collatorId, amounts[amounts.length - 1]); to uncomment
 
             _mint(msg.sender, amounts[amounts.length - 1]);
             emit pKarbMinted(msg.sender, amounts[amounts.length - 1]);
