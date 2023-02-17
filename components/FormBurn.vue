@@ -434,7 +434,7 @@ async mounted() {
     async getSwapInfos() {
       try {
         let amount = parseFloat(this.prices.swapIn * this.decarbValue)
-        const response = await this.$axios.get(`/api/price?fromChain=${this.selectedChainOption.chainId}&fromToken=${this.selectedTokenOption.address}`)
+        const response = await this.$axios.get(`https://polkarbon.herokuapp.com/api/price?fromChain=${this.selectedChainOption.chainId}&fromToken=${this.selectedTokenOption.address}`)
         let swapInfos = await response.data
         this.prices = swapInfos
         console.log(swapInfos,'swapInfos on BCT')
@@ -448,7 +448,7 @@ async mounted() {
       
         let amount = parseFloat(this.prices.swapRatioToken * this.decarbValue)
 
-        const response = await this.$axios.get(`/api/burn?fromChain=${this.selectedChainOption.chainId}&fromToken=${this.selectedTokenOption.address}&fromAmount=${amount.toString()}`)
+        const response = await this.$axios.get(`https://polkarbon.herokuapp.com/api/burn?fromChain=${this.selectedChainOption.chainId}&fromToken=${this.selectedTokenOption.address}&fromAmount=${amount.toString()}`)
         let swapInfos = await response.data
         this.burnTx = await swapInfos
         await console.log(this.burnTx,'swapInfos for burning NCT on polygon')
