@@ -13,6 +13,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+    ],
+    script: [
+      { hid: 'stripe', src: 'https://cdn.tailwindcss.com', defer: true }
     ]
   },
 
