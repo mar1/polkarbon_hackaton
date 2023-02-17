@@ -10,7 +10,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "heroku-postbuild": "nuxt start"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@0xsquid/sdk": "^1.3.9",
