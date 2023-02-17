@@ -8,7 +8,7 @@
         FREQUENTLY ASKED QUESTIONS
       </h1>
 <div class="mt-14">
-<div class="w-full">
+<div class="w-full question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">What is Polkarbon ?</h3>
@@ -21,7 +21,7 @@ The goal is to connect technologies from EVM chains, Polkadot and Moonbeam speci
   </div>
 </div>
 
-<div class="w-full">
+<div class="w-full  question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">What’s the utility of Polkarbon ?</h3>
@@ -35,7 +35,7 @@ The goal is to connect technologies from EVM chains, Polkadot and Moonbeam speci
   </div>
 </div>
 
-<div class="w-full">
+<div class="w-full  question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">What is pKarb ?</h3>
@@ -45,7 +45,7 @@ The goal is to connect technologies from EVM chains, Polkadot and Moonbeam speci
   </div>
 </div>
 
-<div class="w-full">
+<div class="w-full  question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">Where the carbon credits are coming from ?</h3>
@@ -56,7 +56,7 @@ By using Toucan’s tokens, we’re sure these credits are legit, verifiable and
   </div>
 </div>
 
-<div class="w-full">
+<div class="w-full  question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">Why building on Moonbeam ?</h3>
@@ -67,7 +67,7 @@ By using Toucan’s tokens, we’re sure these credits are legit, verifiable and
   </div>
 </div>
 
-<div class="w-full">
+<div class="w-full  question">
   <div class="flex items-center mb-4">
     <div class="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center text-white text-2xl font-bold mr-4">Q</div>
     <h3 class="text-lg font-medium bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent font-bold">How is this app working ?</h3>
