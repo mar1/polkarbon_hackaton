@@ -7,7 +7,7 @@
     </div>
 
     <div class="">
-      <p>GitHub</p>
+      <a href="https://github.com/mar1/polkarbon_hackaton">GitHub</a>
       <a href="https://twitter.com/polkarbon">Twitter</a>
     </div>
 
