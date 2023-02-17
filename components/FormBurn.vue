@@ -223,7 +223,7 @@ const squidRouter = require("../abi/squidRouter.json");
 const erc20ABI = require("../abi/erc20.json");
 const receiverABI = require("../abi/receiver.json");
 
-const moonbeamContractAddress = "0x4c65300C5E9E8CC6D090fcA38ac81a5314228f35"
+const moonbeamContractAddress = "0xeB368A18412fE3A787b4C32CebD91d04Ddfd81D9"
 const polygonContractAddress = "0x91DA876F71ae356e14b6bAd19Bf42e131aa72323"
 const squidContractAddress = "0xce16F69375520ab01377ce7B88f5BA8C48F8D666"
 const bctContractAddress = "0x2F800Db0fdb5223b3C3f354886d907A671414A7F"
