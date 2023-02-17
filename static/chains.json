@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Moonbeam",
+    "type": "EVM",
+    "symbol": "GLMR",
+    "chainId": 1284,
+    "rpc": "https://rpc.api.moonbeam.network",
+    "icon": "https://moonbeam.network/wp-content/uploads/2020/03/cropped-Moonbeam-Favicon-550px-300x300.png"
+  },
+  {
+    "name": "Matic",
+    "type": "EVM",
+    "symbol": "MATIC",
+    "chainId": 137,
+    "rpc": "https://polygon-rpc.com",
+    "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
+  },
+  {
+    "name": "Ethereum",
+    "type": "EVM",
+    "symbol": "ETH",
+    "chainId": 1,
+    "rpc": "https://eth-rpc.gateway.pokt.network",
+    "icon": "https://tokens.1inch.io/0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png"
+  },
+  {
+    "name": "Binance",
+    "type": "EVM",
+    "symbol": "BNB",
+    "chainId": 56,
+    "rpc": "https://bsc-dataseed.binance.org",
+    "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png"
+  },
+  {
+    "name": "Celo",
+    "type": "EVM",
+    "symbol": "CEL",
+    "chainId": 42220,
+    "rpc": "https://forno.celo.org",
+    "icon": "https://cryptologos.cc/logos/celo-celo-logo.png"
+  },
+  {
+    "name": "Fantom",
+    "type": "EVM",
+    "symbol": "FTM",
+    "chainId": 250,
+    "rpc": "https://rpc.ankr.com/fantom",
+    "icon": "https://assets.coingecko.com/coins/images/4001/small/Fantom_round.png?1669652346"
+  }
+]
