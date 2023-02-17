@@ -1,69 +1,73 @@
-# polkarbon
 
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+![Logo](https://polkarbon.herokuapp.com/logogreen.png)
 
 
-### `pages`
+# Polkarbon
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+Polkarbon is an experimental project made for Polkadot Global Hackaton, Europe Series.
+The goal is to connect technologies from EVM chains, Polkadot and Moonbeam specificities while keeping an ethical perspective by using Toucan Protocol.
+It has 2 main functions : one for immediate carbon offsetting from any chain and another function for long-term impact based on pKarb token.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-### `plugins`
+## Features
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+- Crosschain swap from EVM chains to Polygon receiver to redeem BCT tokens (tokenized CO2)
+- Mint of pKarb, ERC20 indexed on BCT token/GLMR token ratio.
+- Interaction with the staking precompile to stake GLMR token
+- Ability to send the yield in a cross-chain swap to the Polygon receiver
+- Ability to perform swap from allowed ERC20 tokens on Stellaswap for GLMR before minting pKarb 
+- Handle xc20 tokens with sufficient liquidities
+- Handle 4 different wallets
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
-### `static`
+## Tech Stack
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+**Client:** Vue.js, Nuxt, Tailwind
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+**Server:** Node, Express
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+**Blockchain tool:** Ethers, Interfaces (Staking precompile, Squid router, Uniswap router, Toucan Offsetter)
 
-### `store`
+## Demo
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+Test front-end deployed version at https://polkarbon.herokuapp.com/
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+## Components
+
+This project is composed of 3 distinct parts: 
+
+- A Progressive Web App to do cross-chain carbon offsetting (immediate impact) or minting pKarb against GLMR (that are staked)
+- A back-end fetching the data and forging the best multichain calls possible thanks to Squid API & Axelar
+- 2 smart contracts (Sender on Moonbeam (pKarb) / Receiver on Polygon)
+
+## Addresses:
+- Moonbeam : 0xeB368A18412fE3A787b4C32CebD91d04Ddfd81D9
+- Polygon : 0x91DA876F71ae356e14b6bAd19Bf42e131aa72323
+
+
+## Lessons Learned
+
+This project has taught me a lot in the last 3 weeks. It's the 1st time I participate alone to an one hackaton but it's also the 1st time I realize a cross-chain dApp
+
+The most difficult part was to handle calls from and to Axelar multicall thanks to Squid API. It required some exploration on several block explorers and creating my own interfaces.
+
+On the other hand, the management of xc20 and staking precompile was super well documented and easier than I thought.
+
+## Roadmap
+
+- Improve Backend Performance
+
+- Adding redeem function (1 pKarb / 1 staked GLMR) with respect to lock duration
+
+- Turn into a DAO with voting power based on holdings
+
+- Make pKarb minting from other chains
+
+- Add more xcTokens
+
+- Build a game or a NFT using pKarb to lock some value in the protocol
+
+
+## 🚀 About Me
+My name is Marin, i'm a web3 full-stack developer, working with my DAOs frens on the first P2E game on Moonbeam Network, called "THE GREAT ESCAPE". I used this hackaton as an opportunity to explore cross-chain usecases on Moonbeam. I wanted also to create a meaningful project, that's why it's using Toucan tokens.
