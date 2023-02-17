@@ -490,13 +490,13 @@
     const signer = provider.getSigner()
     const pKarbContract = new ethers.Contract(moonbeamContractAddress, senderABI, signer)
     if (token != "0x0000000000000000000000000000000000000000") {
-    let mint = await pKarbContract.nativeMint(amount,token,recipient,collator)  
+    let mint = await pKarbContract.nativeMint(amount,token,collator)  
     document.getElementById('mintBtn').innerText = 'Minting in progress...'
     document.getElementById('arrow').style.display = 'None'
     await mint.wait()
     }
     else {
-    let mint = await pKarbContract.nativeMint(amount,token,recipient,collator,{ value: amount })
+    let mint = await pKarbContract.nativeMint(amount,token,collator,{ value: amount })
     document.getElementById('mintBtn').innerText = 'Minting in progress...'
     document.getElementById('arrow').style.display = 'None'
     await mint.wait()
